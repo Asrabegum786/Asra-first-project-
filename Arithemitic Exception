@@ -1,0 +1,33 @@
+package collections;
+
+public class Demo_Arithematic {
+
+	public static void main(String[] args) {
+		int a, b, c;
+		a = 20;
+		b = 10;// 0
+		System.out.println("Strat the proggram");
+		// try block contain a set of statements where an error can occur
+		try {
+			c = a / b;
+			System.out.println("c=" + c);
+
+			int arr[] = { 1, 2, 3 };
+			System.out.println(arr[0]);// 4
+			// catch block is used to handle the exceptions
+		} catch (ArithmeticException ae) {
+			System.out.println("Exeception caught");
+		} catch (ArrayIndexOutOfBoundsException ae) {
+			System.out.println("Array Exeception caught");
+		}
+		/*
+		 * finally block is used to put some common code when there are multiple catch
+		 * blocks
+		 */
+		finally {
+			System.out.println("end of the program");
+		}
+
+	}
+
+}
